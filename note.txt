@@ -1,0 +1,9 @@
+js: window > document
+onClick: sự kiện nhấn chuột
+onBlur: di chuyển khỏi 1 element
+focus: tiếp cận 1 1 element
+select{
+    -option
+    -option
+}
+a href target: định vùng để view link

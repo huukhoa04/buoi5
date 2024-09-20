@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/rrForm.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+</head>
+<body>
+    <div class="form__holder rr__flex-col bg__color-form-2">
+        <div class="f__content-holder rr__flex-col">
+            <div class="title text__center rr__color-danger">
+                <h1>Ví dụ về tạo form</h1>
+            </div>
+            <form action="" class="form__1 rr__flex-col rr__row-gap-md">
+                <div class="tb__holder rr__flex-row">
+                    <label class="tb__label" for="textbox__in"> Textbox: </label>
+                    <input class="input__css fill__x rr__pad-x-sm" type="text" name="textbox__in" id="textbox__in">
+                </div>
+                <div class="tb__holder rr__flex-row">
+                    <label class="tb__label" for="textarea__in">Textarea:</label>
+                    <textarea class="input__css fill__x rr__pad-xs ta__min-size" name="textarea__in" id="textarea__in" rows="4" cols="50"></textarea>
+                </div>
+                <div class="tb__holder rr__flex-row">
+                    <label class="tb__label" for="file__in">File:</label>
+                    <input class="input__css fill__x rr__flex-row-reverse rr__pad-x-sm" type="file" name="file__in" id="file__in">
+                </div>
+                <div class="tb__holder rr__flex-row">
+                    <label class="tb__label">Radio:</label>
+                    <div class="rr__flex-row rr__col-gap-md">
+                        <label>
+                            <input type="radio" name="radio_option" value="option1"> Option 1
+                        </label>
+                        <label>
+                            <input type="radio" name="radio_option" value="option2"> Option 2
+                        </label>
+                    </div>
+                </div>
+                <div class="tb__holder rr__flex-row">
+                    <label class="tb__label">Checkbox:</label>
+                    <div class="rr__flex-row rr__col-gap-md">
+                        <label>
+                            <input type="checkbox" name="checkbox_option1" value="option1"> Option 1
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox_option2" value="option2"> Option 2
+                        </label>
+                    </div>
+                </div>
+                <div class="btn__holder rr__flex-row rr__col-gap-md">
+                    <input class="btn__css" type="button" value="OK">
+                    <input class="btn__css" type="reset" value="RESET">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

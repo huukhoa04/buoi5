@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    font-family: "League Spartan", system-ui !important;
+    font-optical-sizing: auto !important;
+    padding: 0;
+    outline: 0;
+}
+
+.rr__flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.rr__flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.rr__flex-col-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.rr__flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* Row gap classes */
+.rr__row-gap-xs {
+    row-gap: 4px;
+}
+.rr__row-gap-sm {
+    row-gap: 8px;
+}
+.rr__row-gap-md {
+    row-gap: 16px;
+}
+.rr__row-gap-lg {
+    row-gap: 24px;
+}
+.rr__row-gap-xl {
+    row-gap: 32px;
+}
+/* Column gap classes */
+.rr__col-gap-xs {
+    column-gap: 4px;
+}
+.rr__col-gap-sm {
+    column-gap: 8px;
+}
+.rr__col-gap-md {
+    column-gap: 16px;
+}
+.rr__col-gap-lg {
+    column-gap: 24px;
+}
+.rr__col-gap-xl {
+    column-gap: 32px;
+}
+
+/* Font size classes */
+.rr__font-xs { font-size: 0.75em; }
+.rr__font-sm { font-size: 0.875em; }
+.rr__font-md { font-size: 1em; }
+.rr__font-lg { font-size: 1.125em; }
+.rr__font-xl { font-size: 1.25em; }
+.rr__font-2xl { font-size: 1.5em; }
+.rr__font-3xl { font-size: 1.875em; }
+.rr__font-4xl { font-size: 2.25em; }
+.rr__font-5xl { font-size: 3em; }
+.rr__font-6xl { font-size: 3.75em; }
+.rr__font-7xl { font-size: 4.5em; }
+
+
+
+/* Font weight classes */
+.rr__font-light { font-weight: 300; }
+.rr__font-regular { font-weight: 400; }
+.rr__font-medium { font-weight: 500; }
+.rr__font-semibold { font-weight: 600; }
+.rr__font-bold { font-weight: 700; }
+
+
+
+.top__f{
+    height: 80px;
+}
+.side__b{
+    width: 80px;
+}
+
+.text__center{
+    text-align: center;
+}
+.fill__x{
+    width: 100%;
+}
+.fill__y{
+    height: 100%;
+}
+.fill__xy{
+    width: 100%;
+    height: 100%;
+}
+/* Padding classes */
+
+/* All sides padding */
+.rr__pad-xs { padding: 4px; }
+.rr__pad-sm { padding: 8px; }
+.rr__pad-md { padding: 16px; }
+.rr__pad-lg { padding: 24px; }
+.rr__pad-xl { padding: 32px; }
+
+/* Top padding */
+.rr__pad-top-xs { padding-top: 4px; }
+.rr__pad-top-sm { padding-top: 8px; }
+.rr__pad-top-md { padding-top: 16px; }
+.rr__pad-top-lg { padding-top: 24px; }
+.rr__pad-top-xl { padding-top: 32px; }
+
+/* Right padding */
+.rr__pad-right-xs { padding-right: 4px; }
+.rr__pad-right-sm { padding-right: 8px; }
+.rr__pad-right-md { padding-right: 16px; }
+.rr__pad-right-lg { padding-right: 24px; }
+.rr__pad-right-xl { padding-right: 32px; }
+
+/* Bottom padding */
+.rr__pad-bottom-xs { padding-bottom: 4px; }
+.rr__pad-bottom-sm { padding-bottom: 8px; }
+.rr__pad-bottom-md { padding-bottom: 16px; }
+.rr__pad-bottom-lg { padding-bottom: 24px; }
+.rr__pad-bottom-xl { padding-bottom: 32px; }
+
+/* Left padding */
+.rr__pad-left-xs { padding-left: 4px; }
+.rr__pad-left-sm { padding-left: 8px; }
+.rr__pad-left-md { padding-left: 16px; }
+.rr__pad-left-lg { padding-left: 24px; }
+.rr__pad-left-xl { padding-left: 32px; }
+
+/* Horizontal padding */
+.rr__pad-x-xs { padding-left: 4px; padding-right: 4px; }
+.rr__pad-x-sm { padding-left: 8px; padding-right: 8px; }
+.rr__pad-x-md { padding-left: 16px; padding-right: 16px; }
+.rr__pad-x-lg { padding-left: 24px; padding-right: 24px; }
+.rr__pad-x-xl { padding-left: 32px; padding-right: 32px; }
+
+/* Vertical padding */
+.rr__pad-y-xs { padding-top: 4px; padding-bottom: 4px; }
+.rr__pad-y-sm { padding-top: 8px; padding-bottom: 8px; }
+.rr__pad-y-md { padding-top: 16px; padding-bottom: 16px; }
+.rr__pad-y-lg { padding-top: 24px; padding-bottom: 24px; }
+.rr__pad-y-xl { padding-top: 32px; padding-bottom: 32px; }
+
+.bg__color-form-2{
+    background-color: #aadddd;
+}
+
+/* Font colors */
+.rr__color-primary { color: #075794; }
+.rr__color-secondary { color: #6c757d; }
+.rr__color-success { color: #28a745; }
+.rr__color-danger { color: #dc3545; }
+.rr__color-warning { color: #ffc107; }
+.rr__color-info { color: #17a2b8; }
+.rr__color-light { color: #f8f9fa; }
+.rr__color-dark { color: #343a40; }
+.rr__color-white { color: #ffffff; }
+.rr__color-black { color: #000000; }
+
+/* Background colors */
+.rr__bg-primary { background-color: #075794; }
+.rr__bg-secondary { background-color: #6c757d; }
+.rr__bg-success { background-color: #28a745; }
+.rr__bg-danger { background-color: #dc3545; }
+.rr__bg-warning { background-color: #ffc107; }
+.rr__bg-info { background-color: #17a2b8; }
+.rr__bg-light { background-color: #f8f9fa; }
+.rr__bg-dark { background-color: #343a40; }
+.rr__bg-white { background-color: #ffffff; }
+.rr__bg-black { background-color: #000000; }
+
+/* Remove link effects */
+.rr__no-link-effect {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.rr__no-link-effect:hover,
+.rr__no-link-effect:focus,
+.rr__no-link-effect:active {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/rrForm.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <script>
+        function changeColor(event) {
+            event.preventDefault();
+            const colorInput = document.getElementById('color__input');
+            const color = colorInput.value;
+            console.log(color);
+            document.getElementById('form__color').style.backgroundColor = color;
+        // Function to determine if a color is dark
+        function isDarkColor(color) {
+            // Convert color to RGB
+            let rgb = color.match(/\d+/g);
+            if (rgb) {
+                // Calculate luminance
+                let luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+                return luminance < 128;
+            }
+            // For named colors or other formats, create a temporary element to get RGB values
+            let tempElem = document.createElement("div");
+            tempElem.style.color = color;
+            document.body.appendChild(tempElem);
+            let computedColor = window.getComputedStyle(tempElem).color;
+            document.body.removeChild(tempElem);
+            rgb = computedColor.match(/\d+/g);
+            let luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+            return luminance < 128;
+        }
+
+        // Change text color based on background color
+        if (isDarkColor(color)) {
+            document.body.style.setProperty('color', 'white', 'important');
+        } else {
+            document.body.style.setProperty('color', 'black', 'important');
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="form__holder rr__flex-col" id="form__color">
+        <div class="f__content-holder rr__flex-col">
+            <form class="form__1 rr__flex-col rr__row-gap-md" onsubmit="changeColor(event)">
+                <div class="tb__holder rr__flex-row rr__col-gap-md">
+                    <label class="tb__label" for="color__input">Color:</label>
+                    <input class="input__css fill__x rr__pad-x-sm" type="text" name="color__input" id="color__input" placeholder="Enter color (e.g. #FF0000 or red)">
+                    <input class="btn__css" type="submit" value="OK">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

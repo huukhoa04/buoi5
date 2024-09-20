@@ -1,0 +1,138 @@
+@import url(./root.css);
+
+main{
+    /* align-self: center; */
+    width: 70%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1200px){
+    main{
+        /* align-self: center; */
+        width: 100%;
+        /* margin: 0; */
+    }
+}
+@media screen and (max-width: 800px){
+    .main__content{
+        /* align-self: center; */
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        align-items: center;
+        padding: 0 10px;
+        /* margin: 0; */
+    }
+}
+.nav{
+    width: 100%;
+}
+.nav-logo{
+    width: 100%;
+}
+.nav-1{
+    justify-content: space-between;
+    padding: 20px;
+    /* padding-bottom: 0; */
+    height: fit-content;
+}
+.text__holder{
+    padding: 2px;
+}
+.ta__holder{
+    align-items: center;
+}
+.rr__ta{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px #454343 solid;
+    background-color: transparent;
+    resize: none !important;
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    align-self: center;
+    padding-top: 6px;
+    padding-left: 5px;
+}
+.nav-2{
+    width: 100%;
+    padding: 5px;
+    padding-top: 0;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+.nav__option{
+    margin: 0 10px;
+}
+.nav__option:hover {
+    color: #075794;
+    cursor: pointer;
+}
+.nav-3{
+    background-color: #e8e8e8;
+    padding: 5px;
+    display: flex;
+    font-size: medium;
+    flex-direction: row;
+    padding: 12px;
+}
+
+.main__content{
+    column-gap: 16px;
+    padding: 16px 0px; 
+}
+.sidebar{
+    flex: 1;
+}
+.title{
+    border: 1px solid #454343;
+    min-width: 250px;
+    width: fit-content;
+    padding: 10px;
+    padding-right: 70px;
+    font-size: 16px;
+    height: fit-content;
+    color: #075794;
+    font-weight: bolder;
+}
+.sb__option{
+    border: 1px solid #454343;
+    border-top: none;
+    min-width: 250px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-right: 70px;
+    font-weight: bold;
+}
+.sb__option:hover{
+    color: #075794;
+    cursor: pointer;
+}
+.main__container{
+    flex: 2;
+}
+.mc__title{
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.content__comp{
+    column-gap: 16px;
+}
+.ccc__title{
+    font-size: 1.2em;
+}
+.ccc__title:hover {
+    color: #075794;
+    cursor: pointer;
+}
+.ccc__time{
+    opacity: 0.6;
+}
+.thumbnail{
+    width: 250px;
+    height: 90px;
+    border: 1px solid;
+    align-items: center;
+}

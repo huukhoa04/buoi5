@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <!-- <link rel="stylesheet" href="../assets/css/rrForm.css"> -->
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+
+    .rr__flex-col {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        }
+
+    .top__f {
+        flex: 0 0 80px;
+    }
+
+    .rr__flex-row {
+        flex: 1;
+        display: flex;
+    }
+
+    .side__b {
+        flex: 0 0 80px;
+    }
+
+    .mid__b {
+        flex: 1;
+    }
+
+    iframe {
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    * {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    </style>
+</head>
+
+
+    <div class="rr__flex-col">
+        <iframe class="top__f" name="t1" src="t1.html" frameborder="1"></iframe>
+        <div class="rr__flex-row">
+            <iframe class="side__b" name="t2" src="t2.html" frameborder="1"></iframe>
+            <iframe class="mid__b" name="t3" src="form3.html" frameborder="1"></iframe>
+            <iframe class="side__b" name="t4" src="t4.html" frameborder="1"></iframe>
+        </div>
+        <iframe class="top__f" name="t5" src="t5.html" frameborder="1"></iframe>
+    </div>
+    
+</html>

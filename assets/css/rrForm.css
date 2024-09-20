@@ -1,0 +1,55 @@
+@import url(./root.css);
+
+.form__holder{
+    align-items: center;
+    row-gap: 1em;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 1em;
+    align-self: center;
+    min-height: 100vh;
+    justify-content: center;
+    scrollbar-width: none;
+    
+}
+.f__content-holder{
+    align-self: center;
+    padding: 1em;
+    align-items: center;
+    row-gap: 1em;
+}
+.form__1{
+    width: 500px;
+    align-items: center;
+}
+.tb__holder{
+    width: 300px;
+}
+.tb__label{
+    width: 100px;
+}
+.ta__min-size{
+    min-height: 120px;
+    resize: none !important;
+}
+.btn__css{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.btn__css:hover{
+    cursor: pointer;
+    background-color: rgb(128, 255, 188);
+}
+.input__css{
+    width: 225.5px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.input__css:focus{
+    outline: none;
+}
