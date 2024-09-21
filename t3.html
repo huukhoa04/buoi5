@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/form3.css">
     <title>Nguyễn Hữu Khoa</title>
     <style>
-    body{
-    /* align-self: center; */
-    width: 100%;
+        /* align-self: center; */
+    .home__content{
+    width: auto;
     margin: 0 auto;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +19,55 @@
     </style>
 </head>
 <body>
-    <div class="rr__flex-col fill__x rr__font-5xl rr__color-primary text__center rr__font-bold">TRANG CHỦ</div>
+    <main>
+        <div class="nav rr__flex-col">
+            <div class="nav-1 rr__flex-row">
+                <div class="logo__holder">
+                    <img src="https://dut.udn.vn/portals/_default/skins/dhbk/img/front/logo-k_cntt.png" class="nav-logo">
+                    <!-- <div class="text__holder rr__flex-col">
+                        <span>TRƯỜNG ĐẠI HỌC BÁCH KHOA</span>
+                        <span><b>KHOA CÔNG NGHỆ THÔNG TIN</b></span>
+                    </div> -->
+                </div>
+                <div class="ta__holder rr__flex-col"></div>
+                    <textarea placeholder="Tìm kiếm thông tin" class="rr__ta"name="ta1" id="ta1"></textarea>
+                </div>
+            </div>
+            <div class="nav-2 rr__flex-row">
+                <div class="nav__option">
+                    <b>HOME</b>
+                </div>
+                <div class="nav__option">
+                    <b>GIỚI THIỆU</b>
+                </div>
+                <div class="nav__option">
+                    <b>TUYỂN SINH</b>
+                </div>
+                <div class="nav__option">
+                    <b>ĐÀO TẠO</b>
+                </div>
+                <div class="nav__option">
+                    <b>HỢP TÁC</b>
+                </div>
+            </div>
+            <div class="nav-3">
+                Trang chủ
+            </div>
+        </div>
+        <div class="home__content">
+            <div class="rr__flex-col fill__x rr__font-5xl rr__color-primary text__center rr__font-bold">
+                Trang chủ<br>
+                <span class="rr__font-3xs rr__color-primary text__center rr__font-light">
+                    Đang phát triển
+                </span>
+            </div>
+        </div>
+    </main>
     <a href="https://github.com/huukhoa04/buoi5" target="_blank" class="github-link">View on GitHub</a>
     <style>
+
         .github-link {
-        position: absolute;
+        position: fixed;
         bottom: 20px;
         right: 20px;
         padding: 10px 20px;

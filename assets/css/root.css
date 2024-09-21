@@ -6,6 +6,60 @@
     outline: 0;
 }
 
+/* Display classes */
+.rr__display-block {
+    display: block;
+}
+
+.rr__display-inline {
+    display: inline;
+}
+
+.rr__display-inline-block {
+    display: inline-block;
+}
+
+.rr__display-grid {
+    display: grid;
+}
+
+.rr__display-none {
+    display: none;
+}
+
+/* Flex specific display classes */
+.rr__display-flex {
+    display: flex;
+}
+
+.rr__display-inline-flex {
+    display: inline-flex;
+}
+
+/* Grid specific display classes */
+.rr__display-grid {
+    display: grid;
+}
+
+.rr__display-inline-grid {
+    display: inline-grid;
+}
+
+/* Table specific display classes */
+.rr__display-table {
+    display: table;
+}
+
+.rr__display-table-cell {
+    display: table-cell;
+}
+
+.rr__display-table-row {
+    display: table-row;
+}
+
+
+
 .rr__flex-col{
     display: flex;
     flex-direction: column;
@@ -56,6 +110,12 @@
 }
 
 /* Font size classes */
+/* Smaller font size classes */
+.rr__font-2xs { font-size: 0.625em; }
+.rr__font-3xs { font-size: 0.5em; }
+.rr__font-4xs { font-size: 0.375em; }
+.rr__font-5xs { font-size: 0.25em; }
+
 .rr__font-xs { font-size: 0.75em; }
 .rr__font-sm { font-size: 0.875em; }
 .rr__font-md { font-size: 1em; }

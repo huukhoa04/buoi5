@@ -86,7 +86,7 @@ main{
     flex: 1;
 }
 .title{
-    border: 1px solid #454343;
+    border: 1px solid #6a6868;
     min-width: 250px;
     width: fit-content;
     padding: 10px;
@@ -97,7 +97,7 @@ main{
     font-weight: bolder;
 }
 .sb__option{
-    border: 1px solid #454343;
+    border: 1px solid #6a6868;
     border-top: none;
     min-width: 250px;
     height: fit-content;
@@ -112,8 +112,10 @@ main{
 }
 .main__container{
     flex: 2;
+    min-height: 550px;
 }
 .mc__title{
+
     padding-bottom: 10px;
     font-size: 1.2em;
 }
