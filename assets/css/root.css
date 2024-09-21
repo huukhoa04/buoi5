@@ -137,6 +137,42 @@
 .rr__font-semibold { font-weight: 600; }
 .rr__font-bold { font-weight: 700; }
 
+/* Container width classes */
+.rr__container-xs { width: 100%; max-width: 320px; }
+.rr__container-sm { width: 100%; max-width: 640px; }
+.rr__container-md { width: 100%; max-width: 768px; }
+.rr__container-lg { width: 100%; max-width: 1024px; }
+.rr__container-xl { width: 100%; max-width: 1280px; }
+.rr__container-2xl { width: 100%; max-width: 1536px; }
+
+/* Responsive container */
+.rr__container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .rr__container { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+    .rr__container { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+    .rr__container { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+    .rr__container { max-width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+    .rr__container { max-width: 1320px; }
+}
 
 
 .top__f{
