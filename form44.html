@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form44</title>
+</head>
+<body>
+    <script language="javascript"> 
+          function handleClick(){
+            var selectedIndex = document.getElementById('selected_index').value.trim();
+            console.log(selectedIndex);
+            var select1 = document.getElementById('select1');
+            select1.selectedIndex = selectedIndex;
+            // select1.value = select1.options[selectedIndex].value;
+          }
+        
+    </script>
+    <div class="form__holder rr__flex-col">
+        <div class="f__content-holder rr__flex-col">
+            <div class="rr__flex-row rr__align-items-center rr__col-gap-md">
+                <select name="select1" id="select1">
+                    <option value="0">index 0</option>
+                    <option value="1">index 1</option>
+                    <option value="2">index 2</option>
+                    <option value="3">index 3</option>
+                </select>
+                <input type="text" id="selected_index" name="selected_index">
+                <button type="button" onclick="handleClick()">Click here</button>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>

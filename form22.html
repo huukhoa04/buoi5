@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/rrForm.css">
+    <title>Form22</title>
+    <script language="javascript">
+        AddPrice = function(amount){
+            with(this){
+                price = amount;
+            }
+        };
+        Book = function(title, author, content){
+            this.title = title;
+            this.author = author;
+            this.content = content;
+            this.price = 0;
+            this.AddPrice = AddPrice;
+        }
+    </script>
+</head>
+<body>
+    <script language="javascript">
+        var myBook = new Book("Java", "Sun", "OOP");
+        myBook.AddPrice(500);
+        document.write("Book title: " + myBook.title + "<br>");
+        document.write("Author: " + myBook.author + "<br>");
+        document.write("Content: " + myBook.content + "<br>");
+        document.write("Price: " + myBook.price + "<br>");
+    </script>
+</body>
+</html>

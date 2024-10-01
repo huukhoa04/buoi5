@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/rrForm.css">
+    <title>form33</title>
+</head>
+<body>
+    <script language="javascript">
+        function handleBlur(){
+        var input = document.getElementById('text1').value;
+        var result = '';
+        for (var i = 0; i < input.length; i++) {
+            var char = input.charAt(i);
+            if (char === char.toUpperCase()) {
+                result += char.toLowerCase();
+            } else {
+                result += char.toUpperCase();
+            }
+            }
+            document.getElementById('text2').value = result;
+        }
+    </script>
+    <div class="form__holder rr__flex-col">
+        <div class="f__content-holder rr__flex-col">
+            <div class="rr__flex-col rr__align-items-center">
+                <input class="rr__container-sm input__css" type="text" id="text1" name="text1" autofocus onblur="handleBlur()">
+                <input class="rr__container-sm input__css" type="text" id="text2" name="text2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
